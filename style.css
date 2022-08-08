@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600;700&family=Fira+Sans:ital,wght@0,400;0,500;1,400&family=Inconsolata&family=Open+Sans:wght@300;500&family=Oswald:wght@200;300;400&family=Pacifico&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+li,
+a,
+button {
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 3%;
+    align-items: center;
+
+}
+
+header button {
+    background: #5072ff;
+    padding: 0 7vh;
+    border: none;
+    transition: all 200ms;
+    color: white;
+    height: 5vh;
+
+    border-radius: 6vh;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    font-weight: 100;
+    font-size: 1.8vh;
+}
+
+.nav_links li a:hover {
+    color: #5072ff;
+}
+
+.logo {
+    font-weight: bolder;
+}
+
+.container {
+    background: #ECF0FF;
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* .container .content b{
+
+} */
+.text-content {
+    text-align: center;
+    margin-top: -65vh;
+}
+
+.text-content b {
+    font-size: 2vh;
+    color: #5072ff;
+}
+
+.text-content .name {
+    font-size: 6vh;
+}
+
+.type {
+    font-size: 3vh;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(13) infinite alternate,
+        blink 800ms steps(13) infinite normal;
+    border-right: 5px solid #5072ff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #000;
+    padding-top: 1vh;
+
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 16%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: #5072ff;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+.container .content {
+    text-align: center;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.container .content .angle {
+    background: #ECF0FF;
+    margin: auto;
+    width: 10vh;
+    height: 10vh;
+    transform: rotate(40deg);
+    margin-left: 93vh;
+    margin-top: 20vh;
+
+}
+
+.container .content .angle i {
+    font-size: 4vh;
+    transform: rotate(-40deg);
+    animation: arrowDown .9s infinite alternate;
+    padding-right: 1vh;
+    color: #5072ff;
+}
+
+@keyframes arrowDown {
+    from {
+        padding-top: 1vh;
+    }
+
+    to {
+        padding-top: 3vh;
+        padding-left: 1vh;
+    }
+}
+
+/* .about_me{
+    background: #fff;
+    height: 0vh;
+    margin-top: 51vh;
+    display: flex;
+
+
+}
+.about_me img {
+padding-left: 20vh;
+}
+.about_me .text{
+
+
+    width: 88vh;
+}
+.about_me .text h2{
+    font-size: 4vh;
+    text-align: center;
+    color: #000;
+    padding-top: 2vh;
+
+}
+.fade {
+    opacity: 0.5;
+    color: gray;
+    padding-left: 10vh;
+    text-align: left;
+}
+.about_me .text h4{
+    padding-left: 20vh;
+    font-size: 2.3vh;
+
+}
+.address {
+    padding-top: 20vh;
+} */
+.services {
+    height: 90vh;
+    background: #ffff;
+    margin-top: 51vh;
+
+    text-align: center;
+}
+
+.services h1 {
+    padding: 10vh;
+    font-size: 5.3vh;
+    background: linear-gradient(145deg, #5072ff, #fff);
+
+}
+
+.services h5 {
+    font-weight: 400;
+    color: white;
+    font-size: 1.8vh;
+    margin-top: -7.7vh;
+
+}
+.services .flex-container{
+    display: flex;
+    background:#ECF0FF;
+    height:80vh;
+    justify-content: center;
+    margin-top: 3vh;
+    align-items: center;
+    gap: 3vh;
+}
+.services .flex-container .flex_box{
+    width: 40vh;
+    text-align: center;
+    justify-content: center;
+    height: 30vh;
+    align-items: center;
+    display: block;
+}
+.services .flex-container .flex_box:hover{
+    border-radius: 33px;
+    background: linear-gradient(145deg, #5072ff, #fff);
+    box-shadow:  20px 20px 60px #c7c7c7,
+                 -20px -20px 60px #ffffff;
+                 
+
+}
+.services .flex-container .flex_box i{
+    color: #000;
+    font-size: 4vh;
+    padding-top: 4vh;
+}
+.services .flex-container .flex_box h3{
+    font-weight: 500;
+    padding-top: 3vh;
+}
+.services .flex-container .flex_box b{
+    font-weight: 400;
+    color: #000;
+    padding-top: 3vh;
+    opacity: 0.6;
+}
+.reflect::after{
+    background:#5072ff;
+    height: 50vh;
+    width: 50vh;
+}
